@@ -1,0 +1,99 @@
+
+/* General footer styling */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.footer-links h5, .contact-info h5 {
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #e1e1e1;
+  margin-top: 20px;
+}
+
+.footer .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links ul, .footer-links p, .contact-info p {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links ul {
+  padding: 0;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column; /* Stack the content vertically */
+  }
+  
+  .footer .row {
+    flex-direction: column;
+  }
+
+  .footer-links, .contact-info {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    justify-content: center; /* Center social icons on small screens */
+  }
+
+  .footer-links ul li, .contact-info p {
+    text-align: center;
+  }
+
+  .footer .row {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .social-icons a {
+    font-size: 18px; /* Reduce icon size for very small screens */
+  }
+
+  .footer h5 {
+    font-size: 18px; /* Adjust headings for small screens */
+  }
+
+  .footer p, .footer ul li {
+    font-size: 14px; /* Adjust text size for small screens */
+  }
+  .footer-span{
+    text-align: center;
+  }
+}
